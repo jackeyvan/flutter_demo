@@ -1,11 +1,3 @@
-void main() {
-  printNum();
-  printStr();
-  printBool();
-  printList();
-  printMap();
-}
-
 void printMap() {
   Map<String, int> ages = {"xiaoming": 18, "xiaohong": 16, "xiaozhang": 30};
 
@@ -58,4 +50,27 @@ void printList() {
   for (var e in list3) {
     print(e);
   }
+}
+
+class Person {
+  String name;
+  int age;
+
+  Person(this.name, this.age);
+
+  @override
+  String toString() {
+    return "Name:$name,  age:$age";
+  }
+}
+
+void main() {
+  // printNum();
+  // printStr();
+  // printBool();
+  // printList();
+  // printMap();
+
+  Person p = Person("zhangsan", 18);
+  print(p.toString());
 }
