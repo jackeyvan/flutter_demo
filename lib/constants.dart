@@ -1,5 +1,3 @@
-
-
-
-const ROUTE_SETTINGS = "/setting";
-const ROUTE_MAIN = "/";
+const routeSetting = "/setting";
+const routeImage = "/image";
+const routeMain = "/";

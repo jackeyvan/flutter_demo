@@ -20,8 +20,6 @@ class SettingPageState extends State<SettingPage> {
 
     return Scaffold(
       appBar: AppBar(
-
-
         title: Text("设置"),
       ),
       body: Center(

@@ -19,7 +19,7 @@ class TabPageState extends State<TabPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("大力播放器"),
+        title: const Text("Flutter Learn"),
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: mCurrentIndex,
@@ -35,9 +35,16 @@ class TabPageState extends State<TabPage> {
         ],
       ),
       body: mPages[mCurrentIndex],
-      drawer: const Drawer(child: Center(child: Text("左边侧边栏"),),),
-      endDrawer: const Drawer(child: Center(child: Text("右边侧边栏"),),),
-
+      drawer: const Drawer(
+        child: Center(
+          child: Text("左边侧边栏"),
+        ),
+      ),
+      endDrawer: const Drawer(
+        child: Center(
+          child: Text("右边侧边栏"),
+        ),
+      ),
     );
   }
 

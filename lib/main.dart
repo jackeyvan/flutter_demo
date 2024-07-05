@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/page/image/image_page.dart';
 import 'package:flutter_demo/page_setting.dart';
 import 'package:flutter_demo/page_tab.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Learn',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -28,11 +29,12 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      initialRoute: ROUTE_MAIN,
+      initialRoute: routeMain,
       // home: TabPage(),
       routes: {
-        ROUTE_MAIN: (context) => TabPage(),
-        ROUTE_SETTINGS: (context) => SettingPage(),
+        routeMain: (context) => TabPage(),
+        routeSetting: (context) => SettingPage(),
+        routeImage: (context) => ImagePage(),
       },
     );
   }
